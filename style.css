@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&family=Vast+Shadow&display=swap');
+
+/* Prata, Cinzel, Vast shadow. Add diplomata. */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --NW: #f6f7eb;
+    --R: #a52422;
+    --B: black;
+    --AB: #161618;
+    --G: #393e41;
+    /*Font family*/
+    --FF: 'Cinzel', serif;
+    /*Sizes*/
+    --BT: clamp(1rem, 15vw + 1rem, 10.5rem);
+    --ST: clamp(0.8rem, 6vw + 1rem, 6.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+a {
+    text-decoration: none;
+    color: var(--NW);
+}
+
+li {
+    list-style-type: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+    color: var(--R);
+}
+
+img {
+    display: block;
+}
+
+body {
+    background-color: var(--B);
+    color: var(--NW);
+    height: 100%;
+    font-family: var(--FF);
+}
+
+/* Hero section. */
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 100%;
+    background-color: #000000;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.15rem solid var(--NW);
+    padding: 0.5rem 2rem;
+    position: fixed;
+    z-index: 500;
+}
+
+.horseshoe {
+    height: 5rem;
+}
+
+.toggle-button {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--NW);
+    border-radius: 10px;
+}
+
+.header_list {
+    display: flex;
+    list-style: none;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 600;
+    height: 100%;
+}
+
+.nav_links {
+    height: 100%;
+    padding: 1rem 0.5rem;
+}
+
+.nav_links:hover {
+    background-color: rgb(22, 22, 22);
+}
+
+/* Dovrebbe essere parte dell' hero, ma vabbeh. Immagine iniziale.*/
+
+.front-image {
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url(images/icons/Logo-CHT-ver-2.png);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: multiply;
+}
+
+.big-title {
+    font-family: 'Vast Shadow', cursive;
+    font-size: var(--BT);
+    color: white;
+    max-width: 80%;
+    text-align: center;
+}
+
+.small-title {
+    font-family: 'Cinzel', serif;
+    font-size: var(--ST);
+    letter-spacing: 1.8px;
+    word-spacing: 2.4px;
+    color: var(--NW);
+    opacity: 0.75;
+}
+
+.small-title:first-child {
+    padding-top: 1rem;
+}
+
+.front-image button {
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.30;
+    margin-bottom: 2rem;
+    border-style: none;
+}
+
+.front-image button:hover,
+.front-image button:focus {
+    opacity: 0.7;
+}
+
+#front_image_expand_more {
+    position: relative;
+    top: 2px;
+    opacity: 0.8;
+}
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.descrizione_studio {
+    display: flex;
+    gap: 2rem;
+    font-family: "Cinzel", sans-serif;
+    letter-spacing: 0.15rem;
+}
+
+.descrizione_studio p {
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    line-height: clamp(1rem, 1.8rem, 2rem);
+}
+
+.heading_sezione {
+    font-size: clamp(1rem, 8vw + 1rem, 4rem);
+    font-family: "Cinzel", sans-serif;
+    text-align: center;
+}
+
+.foto_studio_descrizione {
+    border-radius: 15%;
+    border: solid var(--NW);
+    letter-spacing: 12px;
+    box-shadow: 8px 8px 3px rgba(80, 79, 79, 0.3);
+}
+
+.meet_the_artists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mazzo {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    width: 99%;
+}
+
+.carta_artista {
+    flex: 1;
+    min-height: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.carta_artista:hover {
+    flex:5;
+    transition: flex 0.45s ease 0s;
+}
+
+.carta_artista:not(:hover) .informazioni_artista {
+    display: none;
+}
+
+.carta_artista:hover .informazioni_artista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 0.5rem 1rem 0;
+}
+
+.social_icons {
+    border-radius: 50%;
+    border: 2px solid var(--NW);
+}
+
+#don_onion {
+    background-image: url(images/artisti/tizio_1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#leo_nucci {
+    background-image: url(images/artisti/tizi_2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#valperya {
+    background-image: url(images/artisti/tizia.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sezione "I nostri tatuaggi. "*/
+
+.our_tattoos {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_tattoos h3 {
+    padding: 2rem 0;
+}
+
+.tattoo_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.tattoo_box {
+    aspect-ratio: 1 / 1;
+    min-width: 200px;
+    position: relative;
+}
+
+.tattoo_overlay {
+    color: var(--NW);
+    opacity: 0;
+    transition: .5s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Cinzel", sans-serif;
+}
+
+.tattoo_box:hover .tattoo_overlay {
+    opacity: 1;
+    background-color: #26262690;
+}
+
+.tatuaggi_artisti {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.immagine_rosa {
+    background-image: url(images/tattoos/valperya_1.jpg);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+}
+
+.immagine_volpe {
+    background-image: url(images/tattoos/don_onion_1.jpg);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+}
+
+.immagine_anubis {
+    background-image: url(images/tattoos/leo_nucci_1.jpg);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+}
+
+.immagine_gatto {
+    background-image: url(images/tattoos/valperya_2.jpg);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+}
+
+.immagine_pesci {
+    background-image: url(images/tattoos/don_onion_2.jpg);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+}
+
+.immagine_cristo {
+    background-image: url(images/tattoos/leo_nucci_2.jpg);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+}
+
+.immagine_cavallo {
+    background-image: url(images/tattoos/valperya_3.jpg);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+}
+
+.immagine_tarocchi {
+    background-image: url(images/tattoos/don_onion_3.jpg);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+}
+
+.immagine_geometrico {
+    background-image: url(images/tattoos/leo_nucci_3.jpg);
+    background-color: #393e41;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sezione I nostri piercings */
+/* .i_nostri_piercings {
+    border: 2px solid #a52422;
+} */
+
+.piercing_slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding:1rem 0;
+}
+
+.piercing_button {
+    border-radius: 50%;
+    background-color: var(--G);
+    height: 50px;
+    opacity: 0.9;
+    border-style: none;
+}
+
+.piercing_button:is(:hover, :focus) {
+    background-color: var(--NW);
+    opacity: 0.8;
+}
+
+.left_side_button {
+    transform: rotate(0.25turn);
+}
+
+.left_side_button>img {
+    position: relative;
+    top: 2px;
+}
+
+.right_side_button {
+    transform: rotate(-0.25turn);
+}
+
+.right_side_button>img {
+    position: relative;
+    top: 2px;
+}
+
+.container_immagini_piercings {
+    display: flex;
+    gap: max(2rem, 3%);
+    padding: 2rem 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.container_immagini_piercings img:first-child,
+.container_immagini_piercings img:last-child {
+    transform: scale(0.9);
+}
+
+.container_immagini_piercings img:nth-child(2) {
+    transform: scale(1.2);
+}
+
+.immagine_piercing {
+    border: 1px solid var(--NW);
+    height: auto;
+    width: 30%;
+    max-width: 500px;
+    box-shadow: rgba(170, 168, 168, 0.19) 0px 10px 20px, rgba(158, 154, 154, 0.23) 0px 6px 6px;
+}
+
+.container_bottoni {
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Sezione Dove trovarci. */
+
+.dove_trovarci {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 80%;
+    height: 16rem;
+    background-color: #393e41;
+    border: 2px var(--NW) solid;
+}
+
+.supportaci {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+h3.heading_sezione {
+    padding: 1.5rem 0 2.5rem 0;
+}
+
+.support_container {
+    width: 80%;
+    background-color: #26262690;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-color: 3px solid var(--NW);
+}
+
+.support_container img {
+    width: min(200px, 40vw);
+    aspect-ratio: 1/1;
+}
+
+.support_container div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.support_button {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #000000;
+    box-shadow: 0px 5px 0px var(--NW);
+}
+
+.support_button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.support_button a {
+    font-family: var(--FF);
+    font-size: larger;
+}
+
+/* Sezione footer. */
+.footer {
+    background-color: black;
+    display: flex;
+    padding: 2rem 2rem;
+    justify-content: space-between;
+    border-top: 2px var(--NW) solid;
+    font-family: "Cinzel", sans-serif;
+}
+
+.left_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.4rem;
+}
+
+.left_footer a {
+    font-weight: 700;
+}
+
+.left_footer h3 {
+    padding: 0.5rem 0;
+}
+
+.link_social ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.social_icons {
+    background-color: var(--NW);
+    width: 2.5rem;
+    height: 2.5rem;
+    aspect-ratio: 1/1;
+}
+
+.social_icons:hover,
+.social_icons:focus {
+    background-color: #a52422;
+}
+
+.timetable th {
+    font-weight: 900;
+    padding-right: 1rem;
+    text-align: left;
+}
+
+table {
+    table-layout: fixed;
+    font-family: "Cinzel", sans-serif;
+}
+
+.timetable {
+    max-width: 300px;
+}
+
+.timetable caption {
+    font-weight: 900;
+}
+
+.timetable tr {
+    text-align: center;
+}
+
+/* Media queries.*/
+@media screen and (max-width: 1465px) {
+    .support_container {
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex;
+        padding-top: 0.5rem;
+    }
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header_list {
+        flex-direction: column;
+    }
+
+    .nav_links {
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .foto_studio_descrizione {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .descrizione_studio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descrizione_studio p {
+        text-align: justify;
+        padding-top: 1rem;
+
+    }
+
+
+    #about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .mazzo {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .carta_artista {
+        border-radius: 0;
+    }
+
+    .carta_artista:not(:hover) .informazioni_artista {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 0.5rem 1rem 0;
+    }
+    
+    .carta_artista:hover .informazioni_artista {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 0.5rem 1rem 0;
+    }
+
+    .card {
+        max-width: 500px;
+    }
+
+    .tattoo_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .artist_photo {
+        width: 100%;
+    }
+
+    .tattoo_grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .container_immagini_piercings img:first-child,
+    .container_immagini_piercings img:last-child {
+        display: none;
+        width: 0%;
+    }
+
+    .container_immagini_piercings img:nth-child(2) {
+        width: 100%;
+        transform: scale(1);
+    }
+}
