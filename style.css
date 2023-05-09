@@ -16,8 +16,8 @@
     /*Font family*/
     --FF: 'Cinzel', serif;
     /*Sizes*/
-    --BT: clamp(1rem, 15vw + 1rem, 10.5rem);
-    --ST: clamp(0.8rem, 6vw + 1rem, 6.5rem);
+    --BT: clamp(0.8rem, 15vw + 1rem, 9rem);
+    --ST: clamp(0.6rem, 6vw + 1rem, 5.5rem);
 }
 
 html {
@@ -145,7 +145,7 @@ header {
 }
 
 .small-title:first-child {
-    padding-top: 1rem;
+    padding-top: 6rem;
 }
 
 .front-image button {
@@ -723,5 +723,21 @@ table {
     .container_immagini_piercings img:nth-child(2) {
         width: 100%;
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #about-section {
+        margin:0;
+    }
+    
+    .foto_studio_descrizione {
+        width:100%;
+        border-radius: 0;
+        border: none;
+    }
+
+    .descrizione_studio>p {
+        padding: 0 clamp(1rem, 5vw, 2rem);
     }
 }
