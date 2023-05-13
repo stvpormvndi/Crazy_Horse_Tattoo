@@ -16,8 +16,8 @@
     /*Font family*/
     --FF: 'Cinzel', serif;
     /*Sizes*/
-    --BT: clamp(0.8rem, 15vw + 1rem, 9rem);
-    --ST: clamp(0.6rem, 6vw + 1rem, 5.5rem);
+    --BT: clamp(0.6rem, 15vw + 1rem, 9rem);
+    --ST: clamp(0.3rem, 6vw + 1rem, 5.5rem);
 }
 
 html {
@@ -70,7 +70,7 @@ header {
     justify-content: space-between;
     border-bottom: 0.15rem solid var(--NW);
     padding: 0.5rem 2rem;
-    position: fixed;
+    position: sticky;
     z-index: 500;
 }
 
@@ -107,10 +107,10 @@ header {
     padding: 1rem 0.5rem;
 }
 
-.nav_links:hover {
+/* .nav_links:hover {
     background-color: rgb(22, 22, 22);
 }
-
+ */
 /* Dovrebbe essere parte dell' hero, ma vabbeh. Immagine iniziale.*/
 
 .front-image {
@@ -145,7 +145,7 @@ header {
 }
 
 .small-title:first-child {
-    padding-top: 6rem;
+    padding-top: 1rem;
 }
 
 .front-image button {
@@ -184,7 +184,7 @@ header {
 }
 
 .descrizione_studio p {
-    font-size: clamp(1rem, 1.5rem, 2rem);
+    font-size: clamp(1rem, 2.5vw + 5px, 2rem);
     line-height: clamp(1rem, 1.8rem, 2rem);
 }
 
@@ -694,6 +694,12 @@ table {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+    }
+
+    #map {
+        width: 100%;
+        border-left: none;
+        border-right: none;
     }
 }
 
