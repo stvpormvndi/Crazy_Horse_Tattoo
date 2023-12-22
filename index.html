@@ -23,39 +23,39 @@
   </head>
 
   <body>
-    <header>
-      <div class="hero">
-        <a href="#">
-          <img
-            src="images/icons/ferro_bordo_bianco_sbordato.png"
-            alt="White Horseshoe logo"
-            class="horseshoe"
-          />
-        </a>
+    <header class="above_the_fold">
+      <div class="button_container">
+        <div class="hero">
+          <a href="#">
+            <img
+              src="images/icons/ferro_bordo_bianco_sbordato.png"
+              alt="White Horseshoe logo"
+              class="horseshoe"
+            />
+          </a>
 
-        <!-- Da qui in poi commincia l'hamburger menu.-->
-        <div class="toggle-button">
-          <!-- <a href="#" class="toggle-button"> -->
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <!-- </a> -->
+          <!-- Da qui in poi commincia l'hamburger menu.-->
+          <button type="button" class="toggle-button">
+            <span class="bar first-bar"></span>
+            <span class="bar second-bar"></span>
+            <span class="bar third-bar"></span>
+          </button>
         </div>
+        <nav class="navbar inactive">
+          <ul class="header_list">
+            <li><a href="#about-section" class="nav_links">Lo studio</a></li>
+            <li>
+              <a href="#presentazione_artisti" class="nav_links">Gli artisti</a>
+            </li>
+            <li><a href="#contatti" class="nav_links">Contatti</a></li>
+            <li>
+              <a href="#dove_trovarci" class="nav_links">Dove trovarci</a>
+            </li>
+            <li><a href="#supportaci" class="nav_links">Supportaci</a></li>
+            <!-- <li><a href="#" class="nav_links">Prenota</a></li> -->
+          </ul>
+        </nav>
       </div>
-      <nav class="navbar">
-        <ul class="header_list">
-          <li><a href="#about-section" class="nav_links">Lo studio</a></li>
-          <li>
-            <a href="#presentazione_artisti" class="nav_links">Gli artisti</a>
-          </li>
-          <li><a href="#contatti" class="nav_links">Contatti</a></li>
-          <li><a href="#dove_trovarci" class="nav_links">Dove trovarci</a></li>
-          <li><a href="#supportaci" class="nav_links">Supportaci</a></li>
-          <!-- <li><a href="#" class="nav_links">Prenota</a></li> -->
-        </ul>
-      </nav>
-    </header>
-    <main>
       <div class="front-image">
         <h2 class="small-title">EST. 2019</h2>
         <h1 class="big-title">Crazy Horse</h1>
@@ -69,6 +69,46 @@
           /></a>
         </button>
       </div>
+    </header>
+    <main>
+      <section class="i-nostri-servizi" id="i-nostri-servizi">
+        <h3 class="heading_sezione">I nostri servizi</h3>
+        <div class="mazzo-servizi">
+          <div class="carta_servizio">
+            <img src="images/icons/tattoo-icon-white.png" alt="Tatuaggio" />
+            <h4 class="titolo-carta-servizio">Tatuaggio</h4>
+            <p class="paragrafo-carta-servizio">
+              Nel nostro studio potrai eseguire ogni genere di tatuaggio guidato
+              dal nostro staff che con originalità e professionalità ti proporrà
+              un'idea unica per il tuo tatuaggio, il tutto in un ambiente
+              sicuro.
+            </p>
+          </div>
+          <div class="carta_servizio">
+            <img src="images/icons/piercing-icon-white.png" alt="Piercing" />
+            <h4 class="titolo-carta-servizio">Piercing</h4>
+            <p class="paragrafo-carta-servizio">
+              Il servizio di piercing viene eseguito da Valperya con cura sia
+              per il lato igienico che per il risultato estetico. Sono
+              utilizzati sia americani che aghi cannula e gioielli di qualità in
+              titanio da impiantologia, completamente anallergico.
+            </p>
+          </div>
+          <div class="carta_servizio">
+            <img
+              src="images/icons/makeup-icon-white.png"
+              alt="Trucco semipermanente"
+            />
+            <h4 class="titolo-carta-servizio">Trucco Semipermanente</h4>
+            <p class="paragrafo-carta-servizio">
+              Il servizio di trucco semipermanente è eseguito dal proprietario
+              Leonardo Nucci che è pronto a soddisfare le vostre esigenze
+              realizzando sia trucco labbra che sopraciglia e dermopigmentazione
+              della cute del cuoio capelluto.
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="about-section">
         <h3 class="heading_sezione">Lo Studio</h3>
         <div class="descrizione_studio">
@@ -96,68 +136,17 @@
             progetto, realizzando design personalizzati e unici!
             <br /><br />Tutti i nostri tatuatori sono in possesso dell'attestato
             di abilitazione e continuano a tenersi aggiornati dedicandosi a
-            corsi di approfondimento e seminari. <br /><br />Ognuno ha le
-            proprie inclinazioni artistiche e uno stile di tatuaggio diverso per
-            offrirti il miglior servizio possibile, ma eseguiamo qualsiasi
-            genere di tatuaggio, anche cover up e restyling di tatuaggi
-            precedenti. <br /><br />Altri servizi che puoi trovare al Crazy
-            Horse sono quello di Piercing e Trucco Semipermanente, entrambi
-            eseguiti in completa sicurezza e igiene. <br /><br />Passa a
-            trovarci! Siamo a pochi passi dalla stazione ferroviaria, in via
-            Flaminia 588. Contattaci per informazioni e prenotazioni sia qui che
-            sui nostri social, ti guideremo nella scelta del tuo prossimo
-            tatuaggio o piercing!
+            corsi di approfondimento e seminari. <br /><br />Passa a trovarci!
+            Siamo a pochi passi dalla stazione ferroviaria, in via Flaminia 588.
+            Contattaci per informazioni e prenotazioni sia qui che sui nostri
+            social, ti guideremo nella scelta del tuo prossimo tatuaggio o
+            piercing!
           </p>
         </div>
       </section>
       <section class="meet_the_artists" id="presentazione_artisti">
         <h3 class="heading_sezione">Resident Artists</h3>
         <div class="mazzo">
-          <div class="carta_artista" id="don_onion">
-            <div class="informazioni_artista">
-              <h3 class="heading_artista">Mono Nero</h3>
-              <p>Lettering | Blackwork | Ignorant</p>
-              <div class="link_social">
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/pages/category/art/Crazy-Horse-Tattoo-Studio-104415704325925/"
-                      target="_blank"
-                      ><img
-                        src="images/icons/facebook.png"
-                        width="30px"
-                        height="30px"
-                        class="social_icons"
-                    /></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/crazy_horse_tattoo/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      ><img
-                        src="images/icons/instagram.png"
-                        width="30px"
-                        height="30px"
-                        class="social_icons"
-                    /></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.tiktok.com/@valperya?_t=8Yy9BOwwuGs&_r=1"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      ><img
-                        src="images/icons/tiktok.png"
-                        width="30px"
-                        height="30px"
-                        class="social_icons"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
           <div class="carta_artista" id="leo_nucci">
             <div class="informazioni_artista">
               <h3 class="heading_artista">Leonardo Nucci</h3>
@@ -248,6 +237,91 @@
               </div>
             </div>
           </div>
+          <div class="carta_artista" id="don_onion">
+            <div class="informazioni_artista">
+              <h3 class="heading_artista">Mono Nero</h3>
+              <p>Lettering | Blackwork | Ignorant</p>
+              <div class="link_social">
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/pages/category/art/Crazy-Horse-Tattoo-Studio-104415704325925/"
+                      target="_blank"
+                      ><img
+                        src="images/icons/facebook.png"
+                        width="30px"
+                        height="30px"
+                        class="social_icons"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/crazy_horse_tattoo/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      ><img
+                        src="images/icons/instagram.png"
+                        width="30px"
+                        height="30px"
+                        class="social_icons"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tiktok.com/@valperya?_t=8Yy9BOwwuGs&_r=1"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      ><img
+                        src="images/icons/tiktok.png"
+                        width="30px"
+                        height="30px"
+                        class="social_icons"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="i_nostri_tatuaggi">
+        <h3 class="heading_sezione">I nostri Tatuaggi</h3>
+        <div class="contenitore_slideshow">
+          <div class="slides fade">
+            <img
+              src="images/tattoos/valperya_1.jpg"
+              alt=""
+              class="slide_image"
+            />
+            <p class="slide_text"></p>
+          </div>
+          <div class="slides fade">
+            <img
+              src="images/tattoos/valperya_2.jpg"
+              alt=""
+              class="slide_image"
+            />
+            <p class="slide_text"></p>
+          </div>
+          <div class="slides fade">
+            <img
+              src="images/tattoos/leo_nucci_1.jpg"
+              alt=""
+              class="slide_image"
+            />
+            <p class="slide_text"></p>
+          </div>
+          <div class="slides fade">
+            <img
+              src="images/tattoos/leo_nucci_2.jpg"
+              alt=""
+              class="slide_image"
+            />
+            <p class="slide_text"></p>
+          </div>
+          <button type="button" class="gallery_button">
+            Vai alla galleria
+          </button>
         </div>
       </section>
       <section class="our_tattoos">
@@ -442,7 +516,7 @@
         </caption>
         <tr>
           <th scope="row">Lunedì</th>
-          <td>Chiuso</td>
+          <td>9:30 - 12:00 | 15:30 - 19:30</td>
         </tr>
         <tr>
           <th scope="row">Martedì</th>
